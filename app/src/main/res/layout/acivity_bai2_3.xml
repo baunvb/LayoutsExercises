@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:stretchColumns="2">
+        <TableRow>
+            <Button android:text="Color1"
+                android:textColor="@color/red"/>
+            <Button android:text="Color2"
+                android:textColor="@color/yellow"/>
+            <Button android:text="Colo3"
+                android:textColor="@color/blue"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_span="3"
+                android:layout_marginTop="5dp"
+                android:background="@color/yellow"
+                android:layout_height="50dp"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="@string/clear"
+                android:layout_span="2"
+                android:layout_column="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

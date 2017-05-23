@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Layouts Exercises</string>
+    <string name="set_color">Set Color</string>
+    <string name="cancel">Cancel</string>
+    <string name="red_label">Red</string>
+    <string name="white_label">White</string>
+    <string name="blue_label">Blue</string>
+    <string name="color1">Color1</string>
+    <string name="color2">Color2</string>
+    <string name="clear">Clear</string>
+</resources>

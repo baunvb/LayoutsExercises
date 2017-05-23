@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.rikkei.layouts_bai1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbColorRed"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:checked="true"
+                android:text="@string/red_label"
+                android:onClick="showButtonColor"/>
+            <RadioButton
+                android:id="@+id/rbColorWhite"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:text="@string/white_label"
+                android:onClick="showButtonColor"/>
+
+            <RadioButton
+                android:id="@+id/rbColorBlue"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:text="@string/blue_label"
+                android:onClick="showButtonColor"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btSetColor"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/set_color" />
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>
